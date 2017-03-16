@@ -1,0 +1,155 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>DISCOVER MALTA</title>
+  	
+       
+
+           <link rel="stylesheet" href="jquery.mobile-1.1.0.min.css" />
+           <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">  
+      
+	     <style>
+		     div.scroll {
+                   background-color: #00BFFF;
+                   height: 300px;
+                   overflow: scroll;
+                  }
+		         .ui-mobile-viewport{
+		     
+                  background: url("cover.jpg") no-repeat;
+                  background-size: 100% 100% !important;
+             }
+                 .ui-page{
+                    background:none;
+                    }
+
+                .ui-panel-content-wrap{
+                    background: none;
+                   }
+                .ui-panel-content-wrap-closed{
+                    background: none;
+                    }
+					
+				#listview a {
+                     background-color: blue;
+                       }	
+				.ui-dialog.ui-widget-content 
+				{ 
+				    background: red; 
+				}	
+				
+		        .ui-dialog {
+                      left: 29% !important;
+                      top: 20% !important;
+                      margin-left: -175px !important; 
+                      margin-top: -175px !important; 
+					 					  
+                   } 
+		
+				 #dialog p { 
+				     background-color: blue; 
+					 }
+	   
+        </style>	
+	   
+
+                
+            	
+        <script src='http://code.jquery.com/jquery-1.10.1.min.js'></script>
+        <script src='http://code.jquery.com/mobile/1.4.0-beta.1/jquery.mobile-1.4.0-beta.1.min.js'></script>
+        <script src='http://example.gajotres.net/iscrollview/iscroll.js'></script>
+        <script src='http://example.gajotres.net/iscrollview/jquery.mobile.iscrollview.js'></script>
+		
+        <body>
+		   <div data-role="page" id="page-1">
+              <div data-role="header">
+                  <h1>DISCOVER MALTA</h1>
+                      
+              </div>
+			      <div data-role="content">
+                      <a href="#towns" data-rel="dialog" data-role="button">VALLETTA</a>
+                      <a href="#towns1" data-rel="dialog" data-role="button">FLORIANA</a>
+                  </div>
+			</div>	  
+				 <div data-role="dialog" id="towns" data-theme="c">
+                    <div data-role="header" data-theme="c">
+                         <h1>VALLETTA</h1>
+                    </div>
+					
+					<div data-role="towns" id="towns-1">
+                         <ul data-role="listview"  >
+                            <li><a style="background:BLUE"  href="#about">About</a></li>
+                            <li><a style ="background:BLUE" href="#places">Places to Visit</a></li>
+                            <li><a style ="background:BLUE" href="#restaurants">Restaurants</a></li>
+                            <li><a style ="background:BLUE" href="#sports">Sports</a></li>
+                           </ul>
+                    </div>
+				</div>	
+					<div id="about" data-role="dialog"  data-theme="b" >
+                       <div data-role="header">
+                           <h1>About Valletta</h1>
+                       </div>
+                      
+					   <div >
+					         <div >
+                             
+	                             <p><font color="black">Valletta (or Il-Belt) is the tiny capital of the Mediterranean island nation of Malta. The walled city was established in the 1500s on a peninsula by the Knights of St. John, a Roman Catholic order. It’s known for museums, palaces and grand churches. Baroque landmarks include St. John’s Co-Cathedral, whose opulent interior is home to the Caravaggio masterpiece "The Beheading of Saint John." </font></p>
+                                						 
+								 <span> <img src = "valletta.jpg" width="500" height="200"></span>
+                              </div>
+					   </div>
+			        </div>
+					
+					<div id="places" data-role="dialog"  data-theme="b" >
+                       <div data-role="header">
+                           <h1>Places to Visit</h1>
+                       </div>
+                      
+					   <div >
+					         <div class="scroll">
+                             
+	                             <p><font color="black">Valletta (or Il-Belt) is the tiny capital of the Mediterranean island nation of Malta. The walled city was established in the 1500s on a peninsula by the Knights of St. John, a Roman Catholic order. It’s known for museums, palaces and grand churches. Baroque landmarks include St. John’s Co-Cathedral, whose opulent interior is home to the Caravaggio masterpiece "The Beheading of Saint John." </font></p>
+                                
+								 <span> <img src = "valletta.jpg" width="500" height="200"></span>
+                              </div>
+					   </div>
+			        </div>
+					
+					
+					<div id="restaurants" data-role="dialog"  data-theme="b" >
+                       <div data-role="header">
+                           <h1>Restaurants</h1>
+                       </div>
+                      
+					   <div >
+					         <div class="scroll">
+                             
+	                             <p><font color="black">Valletta (or Il-Belt) is the tiny capital of the Mediterranean island nation of Malta. The walled city was established in the 1500s on a peninsula by the Knights of St. John, a Roman Catholic order. It’s known for museums, palaces and grand churches. Baroque landmarks include St. John’s Co-Cathedral, whose opulent interior is home to the Caravaggio masterpiece "The Beheading of Saint John." </font></p>
+                                
+								 <span> <img src = "valletta.jpg" width="500" height="200"></span>
+                              </div>
+					   </div>
+			        </div>
+					
+					
+					<div id="sports" data-role="dialog"  data-theme="b" >
+                       <div data-role="header">
+                           <h1>Sports</h1>
+                       </div>
+                      
+					   <div >
+					         <div class="scroll">
+                             
+	                             <p><font color="black">Valletta (or Il-Belt) is the tiny capital of the Mediterranean island nation of Malta. The walled city was established in the 1500s on a peninsula by the Knights of St. John, a Roman Catholic order. It’s known for museums, palaces and grand churches. Baroque landmarks include St. John’s Co-Cathedral, whose opulent interior is home to the Caravaggio masterpiece "The Beheading of Saint John." </font></p>
+                                
+								 <span> <img src = "valletta.jpg" width="500" height="200"></span>
+                              </div>
+					   </div>
+			        </div>
+					
+					
+				
+		</body>
+   
+</head>
+</html>
