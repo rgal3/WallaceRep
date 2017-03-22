@@ -8,9 +8,28 @@
            <link rel="stylesheet" href="jquery.mobile-1.1.0.min.css" />
            <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">  
       
-	     <style>
-		     div.scroll {
+	     <style type='text/css'>
+		 
+		      .ui-page .ui-header {
+                    background: blue!important;
+					font-size:130%;
+					              }
+                       
+			   
+		    .event-title{
+	             float: left; 
+	             margin-right: 15px !important;
+                 padding-right: 25px !important;
+                        }
+						
+		    div.scroll1 {
                    background-color: #00BFFF;
+                   height: 100px;
+                   overflow: scroll;
+                  }
+		 
+		     div.scroll {
+                   background-color: white;
                    height: 300px;
                    overflow: scroll;
                   }
@@ -43,13 +62,13 @@
                       top: 20% !important;
                       margin-left: -175px !important; 
                       margin-top: -175px !important; 
-					 					  
-                   } 
+		 				   } 
 		
 				 #dialog p { 
 				     background-color: blue; 
 					 }
-	   
+	
+       
         </style>	
 	   
 
@@ -62,26 +81,25 @@
 		
         <body>
 		   <div data-role="page" id="page-1">
-              <div data-role="header">
-                  <h1>DISCOVER MALTA</h1>
-                      
+              <div data-theme="b" data-role="header" >
+                  <h1><font color="white">DISCOVER MALTA</font></h1>
               </div>
 			      <div data-role="content">
                       <a href="#towns" data-rel="dialog" data-role="button">VALLETTA</a>
                       <a href="#towns1" data-rel="dialog" data-role="button">FLORIANA</a>
                   </div>
 			</div>	  
-				 <div data-role="dialog" id="towns" data-theme="c">
+				 <div data-role="dialog" id="towns" data-theme="b">
                     <div data-role="header" data-theme="c">
                          <h1>VALLETTA</h1>
                     </div>
 					
 					<div data-role="towns" id="towns-1">
                          <ul data-role="listview"  >
-                            <li><a style="background:BLUE"  href="#about">About</a></li>
-                            <li><a style ="background:BLUE" href="#places">Places to Visit</a></li>
-                            <li><a style ="background:BLUE" href="#restaurants">Restaurants</a></li>
-                            <li><a style ="background:BLUE" href="#sports">Sports</a></li>
+                            <li><a style="background:white"  href="#about"><font color="black">About</font></a></li>
+                            <li><a style ="background:white" href="#places"><font color="black">Places to Visit</font></a></li>
+                            <li><a style ="background:white" href="#restaurants"><font color="black">Restaurants</font></a></li>
+                            <li><a style ="background:white" href="#sports"><font color="black">Sports</font></a></li>
                            </ul>
                     </div>
 				</div>	
@@ -102,34 +120,408 @@
 					
 					<div id="places" data-role="dialog"  data-theme="b" >
                        <div data-role="header">
-                           <h1>Places to Visit</h1>
+                           <h1>PLACES TO VISIT</h1>
                        </div>
                       
 					   <div >
 					         <div class="scroll">
+
+					                  <div data-role="place" id="place-1">
+                                           <ul data-role="listview"  >
+                                              <li><a style="background:white"  href="#museums"><font color="black">Museums</font></a></li>
+                                              <li><a style ="background:white" href="#forts"><font color="black">Forts & Fortifications</font></a></li>
+											  <li><a style ="background:white" href="#churches"><font color="black">Churches</font></a></li>
+											  <li><a style ="background:white" href="#gardens"><font color="black">Gardens</font></a></li>
+											  <li><a style ="background:white" href="#other"><font color="black">Other</font></a></li>
+                                            </ul>
+                                      </div>
+				                  </div>	
                              
-	                             <p><font color="black">Valletta (or Il-Belt) is the tiny capital of the Mediterranean island nation of Malta. The walled city was established in the 1500s on a peninsula by the Knights of St. John, a Roman Catholic order. It’s known for museums, palaces and grand churches. Baroque landmarks include St. John’s Co-Cathedral, whose opulent interior is home to the Caravaggio masterpiece "The Beheading of Saint John." </font></p>
-                                
-								 <span> <img src = "valletta.jpg" width="500" height="200"></span>
+
                               </div>
 					   </div>
-			        </div>
+
+					<div id="museums" data-role="dialog"  data-theme="b" >
+                       <div data-role="header">
+                           <h1>MUSEUMS</h1>
+                       </div>
+                      
+					   <div >
+					         <div >
+							 
+							  <div class="scroll">
+                                 <h2> <img class="event-title"  src="postal.jpg" width="50" height="50" /><font color="black">Malta Postal Musuem</font></h2>
+	                             <p><font color="black">135, Archbishop Street, Valletta, Malta </font></p>
+								 <p><font color="black">The Malta Postal Museum, located at 135, Archbishop Street, Valletta right next to The Palace is one of Malta's newest heritage attractions. Within our walls, we explore centuries of Maltese and Postal history starting early in the 16th century and moving on towards the present day. Located in a large restored town house and spread over four floors, the museum brings to life Maltese history and the important role played by the Post over the years.</font></p>
+                              	 <p><font color="black">_________________________________________________________________________</font></p>
+								 
+								 <h2> <img class="event-title"  src="Armoury.png" width="50" height="50" /><font color="black">Armoury</font></h2>
+	                             <p><font color="black">Grandmasters Palace,, Palace Square, Valletta VLT 1191, Malta </font></p>
+								 <p><font color="black">The Palace Armoury is one of the world’s largest collections of arms and armour that is still housed in its original building. The Armoury contains some fine examples of mediaeval armour and weapons used by the Knights. Among the thousands of exhibits are Grand Master La Vallette’s suit of armour and a magnificent ceremonial suit worn by Grand Master Alof de Wignacourt..</font></p>
+                              	 <p><font color="black">_________________________________________________________________________</font></p>
+								 
+								 <h2> <img class="event-title"  src="manoel.jpg" width="50" height="50" /><font color="black">Manoel Theatre Museum</font></h2>
+	                             <p><font color="black">Manoel Theatre, 115, Old Theatre Street, Valletta, Malta </font></p>
+								 <p><font color="black">The Manoel Theatre Museum is located in the beautiful capital of Malta, Valletta, within The Manoel Theatre. The theatre was built in 1731, and is actually one of the oldest theatres in Europe where acting and music are still performed on stage.</font></p>
+                              	 <p><font color="black"> The theatre has been fully restored to its earlier glory and is beautiful to look at; it is a wonderful setting in its own right. The Manoel museum was set up by the Fondazzjoni Patrimonju Malti as a tribute to three centuries of Theatrical History in Malta, exhibiting a range of memorabilia that has been put together from a wide range of sources, both public and private.    </font>
+								 <p><font color="black">_________________________________________________________________________</font></p>
+								 
+								 <h2> <img class="event-title"  src="Archaeology-Valletta.png" width="50" height="50" /><font color="black">National Museum of Archaeology </font></h2>
+	                             <p><font color="black">Auberge de Provence, Republic Street, Valletta VLT 1112, Malta </font></p>
+								 <p><font color="black"> The National Museum of Archaeology is housed in the Auberge de Provence, in Republic Street, Valletta. The building, an example of fine Baroque architecture, was built in 1571 and followed a plan by local architect Ġilormu Cassar.</font></p>
+								 <p><font color="black">Displays items of pottery, sculptures, statuettes, stone implements and personal ornaments. Typical examples of Punic and Roman Tomb furniture along with the museum’s most prized exhibits – The Maltese Venus and The Sleeping Lady. </font></p>
+								 <p><font color="black">_________________________________________________________________________</font></p>
+								 
+								 <h2> <img class="event-title"  src="Fine-Arts.png" width="50" height="50" /><font color="black">National Museum of Fine Arts </font></h2>
+	                             <p><font color="black">South Street,Valletta VLT 1101, Malta</font></p>
+								 <p><font color="black">The National Museum of Fine Arts is located at the lower end of South Street (Valletta) within an area including other fine historical palaces dating from the time of the Order of St John of Jerusalem. The area is also well known for its wine bars and cafés and offers little-known breathtaking views of the city’s grid-shaped streets which visitors usually explore on their way to the museum..</font></p>
+								 <p><font color="black">On display are works by local and internationally renowned artists such as, Ribera, Mattia Preti, Mathias Stomer and many others. Also included in the Museum’s collection and on show are sculpture, furniture and other works of art connected with the Order of St. John, notably the ‘monetarium’ – a unique collection of coins. </font></p>
+								 <p><font color="black">_________________________________________________________________________</font></p>
+								 
+								 <h2> <img class="event-title"  src="john.jpg" width="50" height="50" /><font color="black">St. John’s Museum </font></h2>
+	                             <p><font color="black">St John’s Square, Valletta, Malta</font></p>
+								 <p><font color="black">The Oratory and Museum contain two masterpieces by Caravaggio, including the Beheading of St. John the Baptist. Also on display are the surviving Cathedral silver, a unique collection of clerical vestments and the Flemish tapestries depicting religious stories made in the late 17th century. </font></p>
+								 <p><font color="black">_________________________________________________________________________</font></p>
+								 
+								 <h2> <img class="event-title"  src="john.jpg" width="50" height="50" /><font color="black">Toy Museum </font></h2>
+	                             <p><font color="black">222 Republic Street, Valletta, Malta</font></p>
+								 <p><font color="black">The Toy Museum houses a very large and impressive collection of toys from the 1950s onward including model planes, boats, Matchbox cars, farmyard animals, trains and dolls. </font></p>
+								 <p><font color="black">Showcased on three floors are toys from the 1950’s onward. Of particular interest is a fine collection of Corgy, Dinky and Matchbox cars.</font></p>
+								 <p><font color="black">_________________________________________________________________________</font></p>
+								 
+						         <h2> <img class="event-title"  src="john.jpg" width="50" height="50" /><font color="black">War Museum</font></h2>
+	                             <p><font color="black">National War Museum, Fort St Elmo, Valletta, Malta</font></p>
+								 <p><font color="black">This War Museum represents the important role Malta and its people played during World War II as well as Malta’s important military role after 1800 under British rule. However, the museum displays also items from the First World War and from the two years of French Occupation. The collection recounts the story of events that led the two world wars, how they developed and as well as their consequences on both Malta and abroad. </font></p>
+								 <p><font color="black">The War Museum is packed with hardware, photographs and memorabilia from World War II, ranging from the heroic Gloster Gladiator – christened Faith, part of the trio of planes known as Faith, Hope and Charity, to the George Cross, awarded to the Maltese people for their bravery by King George VI in 1942.</font></p>
+								 <p><font color="black">_________________________________________________________________________</font></p>
+						 
+						 
+					          </div>
+			                </div>
+					  </div>
+					</div>
+					
+					<div id="forts" data-role="dialog"  data-theme="b" >
+                       <div data-role="header">
+                           <h1>FORTS</h1>
+                       </div>
+                      
+					   <div >
+					         <div >
+							 
+							  <div class="scroll">
+                                 <h2> <img class="event-title"  src="stelmo.jpg" width="50" height="50" /><font color="black">Fort St. Elmo</font></h2>
+	                             <p><font color="black">Valletta, Malta </font></p>
+								 <p><font color="black">Fort St. Elmo guards the approach to the Grand Harbour and Marsamxett Harbour. It was built in 1488 and was the scene of a heroic defence during the Great Seige of 1565. The British added gun emplacements in the 19th century. In front of the fort are the St. Elmo Granaries, storage silos with stone lids.</font></p>
+                              	 <p><font color="black">_________________________________________________________________________</font></p>
+				
+					          </div>
+			                </div>
+					  </div>
+					</div>
+					
+					<div id="churches" data-role="dialog"  data-theme="b" >
+                       <div data-role="header">
+                           <h1>CHURCHES</h1>
+                       </div>
+                      
+					   <div >
+					         <div >
+							 
+							  <div class="scroll">
+                                 <h2> <img class="event-title"  src="stjohn.jpg" width="50" height="50" /><font color="black">St. John’s Co. Cathedral </font></h2>
+	                             <p><font color="black">Valletta, Malta </font></p>
+								 <p><font color="black">Formerly the Conventual Church of the Order of St. John. It is historically and artistically one of the most historical monuments on the island. It was built between 1573 and 1577 to the design of Girolamo Cassar (1520-1586), chief engineer of the Order. The “Beheading of St. John”, Caravaggio’s masterpiece, hangs on the Oratory. </font></p>
+                              	 <p><font color="black">_________________________________________________________________________</font></p>
+				
+				                 <h2> <img class="event-title"  src="stjohn.jpg" width="50" height="50" /><font color="black">St. Paul Shipwreck Church  </font></h2>
+	                             <p><font color="black">74 St Paul St, Valletta VLT 1212, Malta </font></p>
+								 <p><font color="black">Built to commemorate St. Paul’s Shipwreck on the island, the church contains impressive vault paintings by Attilio Palombi which portray episodes in the life of St. Paul. There is also a magnificent wooden statue of the apostle and two very important relics – a wrist bone of St. Paul and a piece of the column on which he was beheaded. </font></p>
+                              	 <p><font color="black">_________________________________________________________________________</font></p>
+				
+				
+					          </div>
+			                </div>
+					  </div>
+					</div>
+					
+					<div id="gardens" data-role="dialog"  data-theme="b" >
+                       <div data-role="header">
+                           <h1>GARDENS</h1>
+                       </div>
+                      
+					   <div >
+					         <div >
+							 
+							  <div class="scroll">
+                                 <h2> <img class="event-title"  src="upper.jpg" width="50" height="50" /><font color="black">Upper Barrakka Gardens </font></h2>
+	                             <p><font color="black">Triq Sant' Orsla, Il-Belt Valletta </font></p>
+								 <p><font color="black">These 18th century gardens offer excellent views overlooking the Grand Harbour across to the Three Cities. The gardens are dotted with statues and have been totally refurbished. Below these gardens lie the lower Barrakka and every Saturday at noon, the 'noon gun' is fired.  </font></p>
+                              	 <p><font color="black">_________________________________________________________________________</font></p>
+				
+				                 <h2> <img class="event-title"  src="lower.jpg" width="50" height="50" /><font color="black">Lower Barrakka Gardens </font></h2>
+	                             <p><font color="black">Valletta, Malta </font></p>
+								 <p><font color="black">These gardens are built on the bastion edge with stunning views over the Breakwater entrance to the Grand Harbour, Fort Ricasoli, Bighi Palace, Fort St. Angelo in Vittoriosa and Kalkara. Apart from the fantastic view, the peaceful garden is home to many trees and colourful flowers and cats resting in the shade.. </font></p>
+                              	 <p><font color="black">The statue of the first British Governor of Malta, Alexander Ball, and a monument in remembrance of the Great Siege in Malta complements the garden.</font></p>
+								 <p><font color="black">_________________________________________________________________________</font></p>
+				
+				                 <h2> <img class="event-title"  src="hastings.jpg" width="50" height="50" /><font color="black">Hastings Gardens </font></h2>
+	                             <p><font color="black">Valletta, Malta </font></p>
+								 <p><font color="black">A small garden set on the bastions with splendid views of Manoel Island and Msida Creek. The gardens also houses a monument built by the Hasting’s family to the governor of Malta who died in 1826. </font></p>
+                              	 
+								 <p><font color="black">_________________________________________________________________________</font></p>
+					          </div>
+			                </div>
+					  </div>
+					</div>
+					
+					
+					<div id="other" data-role="dialog"  data-theme="b" >
+                       <div data-role="header">
+                           <h1>OTHER</h1>
+                       </div>
+                      
+					   <div >
+					         <div >
+							 
+							  <div class="scroll">
+                                 <h2> <img class="event-title"  src="library.jpg" width="50" height="50" /><font color="black">National Library </font></h2>
+	                             <p><font color="black">36 Old Treasury Street,, Valletta, Malta </font></p>
+								 <p><font color="black">This grand 18th century, Venetian style building was the last public building commissioned by the Knights. It houses some 400,000 works, many rare or priceless. All archival material covering the history of the Knights from 1113 to 1798 is lodged in the library. </font></p>
+                              	 <p><font color="black">_________________________________________________________________________</font></p>
+				
+				                 <h2> <img class="event-title"  src="sacra.jpg" width="50" height="50" /><font color="black">Sacra Infermeria </font></h2>
+	                             <p><font color="black">Triq l-Isptar, Valletta VLT 1645, Malta </font></p>
+								 <p><font color="black">The hospital of the Order of St. John was built in 1574, one of the earlier buildings in Valletta. It was famous for its high standards, as well as its grand interior. The Great Ward, 153 metres long has one of the longest roof expanses in Europe. During World War II it was seriously damaged through bombing and after extensive renovation it re-opened as the Mediterranean Conference Centre. </font></p>
+                              	 <p><font color="black">_________________________________________________________________________</font></p>
+				
+				                 <h2> <img class="event-title"  src="bell.jpg" width="50" height="50" /><font color="black">Seige Bell Memorial </font></h2>
+	                             <p><font color="black">Valletta, Malta </font></p>
+								 <p><font color="black">The Seige Bell Memorial was inaugurated in 1992 by Queen Elizabeth. It is monument for those that died during World War II. </font></p>
+                              	 <p><font color="black">_________________________________________________________________________</font></p>
+					         
+                                 <h2> <img class="event-title"  src="palace.jpg" width="50" height="50" /><font color="black">Grand Master’s Palace </font></h2>
+	                             <p><font color="black">Valletta, Malta </font></p>
+								 <p><font color="black">The Magesterial Palace, built between 1571 and 1574, is today the president’s office and seat to Malta’s parliament. The palace is a treasure trove of art. The Tapestry Chamber hangs a unique collection of Gobelin tapestries. Frescoes depicting the Great Seige of 1565 adorn the Hall of St. Micheal and St. George – formerly the Order’s Supreme Council Hall. And, the beautiful ceiling decorations are by Nicolo Nasini. You will also find works by Ribera, Vanloo and Batoni in the State Apartments.  </font></p>
+                              	 <p><font color="black">_________________________________________________________________________</font></p>
+                                  
+								 <h2> <img class="event-title"  src="rocca.jpg" width="50" height="50" /><font color="black">Casa Rocca Piccola </font></h2>
+	                             <p><font color="black">74 Republic St, Valletta, Malta </font></p>
+								 <p><font color="black">This small palazzo, built in 1580, is a window to Maltese domestic culture of yesteryear. You will find an excellent costume collection on display, important period furniture and pictures. All the rooms are featured on the guided tour including the recently opened war shelters.  </font></p>
+                              	 <p><font color="black">_________________________________________________________________________</font></p>
+
+
+
+							 </div>
+			                </div>
+
+					  </div>
+					</div>
 					
 					
 					<div id="restaurants" data-role="dialog"  data-theme="b" >
                        <div data-role="header">
-                           <h1>Restaurants</h1>
+                           <h1>RESTAURANTS</h1>
                        </div>
                       
 					   <div >
-					         <div class="scroll">
+					         <div class="scroll1">
                              
-	                             <p><font color="black">Valletta (or Il-Belt) is the tiny capital of the Mediterranean island nation of Malta. The walled city was established in the 1500s on a peninsula by the Knights of St. John, a Roman Catholic order. It’s known for museums, palaces and grand churches. Baroque landmarks include St. John’s Co-Cathedral, whose opulent interior is home to the Caravaggio masterpiece "The Beheading of Saint John." </font></p>
-                                
-								 <span> <img src = "valletta.jpg" width="500" height="200"></span>
+	                             
+					
+					                  <div data-role="rest" id="rest-1">
+                                           <ul data-role="listview"  >
+                                              <li><a style="background:white"  href="#fine"><font color="black">Fine Dining</font></a></li>
+                                              <li><a style ="background:white" href="#cheap"><font color="black">Casual Dining</font></a></li>
+                                            </ul>
+                                      </div>
+				                  </div>	
                               </div>
 					   </div>
-			        </div>
+			        
+					
+					<div id="fine" data-role="dialog"  data-theme="b" >
+                       <div data-role="header">
+                           <h1>FINE DINING</h1>
+                       </div>
+                      
+					   <div >
+					         <div >
+							 
+							  <div class="scroll">
+                                 <h2> <img class="event-title"  src="dinnerinthesky.jpg" width="50" height="50" /><font color="black">Dinner In The Sky Malta</font></h2>
+	                             <p><font color="black">126 Archbishop Street, Valletta, Island of Malta VLT 14 </font></p>
+								 <p>  <img class="event-title"  src="tel.png" width="32" height="32" /><font color="black">+356 9998 8835</font></p>
+                              	 <p><font color="black">_________________________________________________________________________</font></p>
+								 
+								 
+								 
+								 <h2> <img class="event-title"  src="mich.jpg" width="50" height="50" /><font color="black">Michael's at the Civil Service Sports Club</font></h2>
+	                             <p><font color="black">113 Archbishop Street, Valletta, Island of Malta VLT 14 </font></p>
+								 <p>  <img class="event-title"  src="tel.png" width="32" height="32" /><font color="black">+356 2122 8500</font></p>
+                              	 <p><font color="black">_________________________________________________________________________</font></p>
+								 
+								 
+								  <h2> <img class="event-title"  src="rempila.jpg" width="50" height="50" /><font color="black">Rampila Club</font></h2>
+	                             <p><font color="black">St Johns Cavalier, Valletta, Island of Malta </font></p>
+								 <p>  <img class="event-title"  src="tel.png" width="32" height="32" /><font color="black">+356 2122 6625</font></p>
+                              	 <p><font color="black">_________________________________________________________________________</font></p>
+								 
+								 
+								 <h2> <img class="event-title"  src="giannini.jpg" width="50" height="50" /><font color="black">Giannini</font></h2>
+	                             <p><font color="black">23 Windmill Street, Valletta, Island of Malta VLT 11,  </font></p>
+								 <p>  <img class="event-title"  src="tel.png" width="32" height="32" /><font color="black">+356 2123 7121</font></p>
+                              	 <p><font color="black">_________________________________________________________________________</font></p>
+								 
+								 
+								 <h2> <img class="event-title"  src="horza.jpg" width="50" height="50" /><font color="black">Il-Horza</font></h2>
+	                             <p><font color="black">6, St. Christopher Street | Valletta, Valletta, Island of Malta VLT 1468,   </font></p>
+								 <p>  <img class="event-title"  src="tel.png" width="32" height="32" /><font color="black">+356 2122 6936</font></p>
+                              	 <p><font color="black">_________________________________________________________________________</font></p>
+								 
+								 
+								 <h2> <img class="event-title"  src="pegasus.jpg" width="50" height="50" /><font color="black">The Pegasus</font></h2>
+	                             <p><font color="black">The Mall, Valletta, Island of Malta FRN 1478, Malta   </font></p>
+								 <p>  <img class="event-title"  src="tel.png" width="32" height="32" /><font color="black">+356 2122 5241</font></p>
+                              	 <p><font color="black">_________________________________________________________________________</font></p>
+								 
+								 
+								 <h2> <img class="event-title"  src="black-pig.jpg" width="50" height="50" /><font color="black">Black Pig</font></h2>
+	                             <p><font color="black">95-96 Old Bakery Street, Valletta, Island of Malta   </font></p>
+								 <p>  <img class="event-title"  src="tel.png" width="32" height="32" /><font color="black">+356 7922 1606</font></p>
+                              	 <p><font color="black">_________________________________________________________________________</font></p>
+								 
+								 
+								 <h2> <img class="event-title"  src="phoenix.jpg" width="50" height="50" /><font color="black">Phoenix Restaurant</font></h2>
+	                             <p><font color="black">Phoenicia Hotel Malta | The Mall, Valletta, Island of Malta   </font></p>
+								 <p>  <img class="event-title"  src="tel.png" width="32" height="32" /><font color="black">+356 2291 1083</font></p>
+                              	 <p><font color="black">_________________________________________________________________________</font></p>
+								 
+								 <h2> <img class="event-title"  src="scoglitti.jpg" width="50" height="50" /><font color="black">Scoglitti Restaurant</font></h2>
+	                             <p><font color="black">8' Triq il-Lanca Marsamxett, Valletta, Island of Malta VLT 14 </font></p>
+								 <p>  <img class="event-title"  src="tel.png" width="32" height="32" /><font color="black">+356 2123 5548</font></p>
+                              	 <p><font color="black">_________________________________________________________________________</font></p>
+						       </div>
+							 </div>
+					   </div>
+			          </div>
+					
+					
+					<div id="cheap" data-role="dialog"  data-theme="b" >
+                       <div data-role="header">
+                           <h1>CASUAL DINING</h1>
+                       </div>
+                      
+					   <div >
+					         <div >
+							 
+							  <div class="scroll">
+                                 <h2> <img class="event-title"  src="the-submarine.jpg" width="50" height="50" /><font color="black">The Submarine</font></h2>
+	                             <p><font color="black">Merchant Street 42 B, Valletta, Island of Malta 1173 </font></p>
+								 <p>  <img class="event-title"  src="tel.png" width="32" height="32" /><font color="black">+356 7706 4944</font></p>
+                              	 <p><font color="black">_________________________________________________________________________</font></p>
+								 
+								 
+								 
+								 <h2> <img class="event-title"  src="piadina-caffe.jpg" width="50" height="50" /><font color="black">Piadina Caffe</font></h2>
+	                             <p><font color="black">24 Triq Santa Lucija | Triq Santa Lucija, Valletta, Island of Malta </font></p>
+								 <p>  <img class="event-title"  src="tel.png" width="32" height="32" /><font color="black">+356 21225983</font></p>
+                              	 <p><font color="black">_________________________________________________________________________</font></p>
+								 
+								 
+								  <h2> <img class="event-title"  src="pulled-pork.jpg" width="50" height="50" /><font color="black">Pulled Meat Company</font></h2>
+	                             <p><font color="black">64, South Street, Valletta, Island of Malta 1105, Malta </font></p>
+								 <p>  <img class="event-title"  src="tel.png" width="32" height="32" /><font color="black">+356 21242244</font></p>
+                              	 <p><font color="black">_________________________________________________________________________</font></p>
+								 
+								 
+								 <h2> <img class="event-title"  src="gugar.jpg" width="50" height="50" /><font color="black">Gugar Hangout & Bar</font></h2>
+	                             <p><font color="black">89A Republic Street, Valletta, Island of Malta VLT 001  </font></p>
+								 <p>  <img class="event-title"  src="tel.png" width="32" height="32" /><font color="black">+356 2703 2837</font></p>
+                              	 <p><font color="black">_________________________________________________________________________</font></p>
+								 
+								 
+								 <h2> <img class="event-title"  src="no.jpg" width="50" height="50" /><font color="black">No.43</font></h2>
+	                             <p><font color="black">43 Merchants Street, Valletta, Island of Malta VLT 117   </font></p>
+								 <p>  <img class="event-title"  src="tel.png" width="32" height="32" /><font color="black">+356 2703 2294</font></p>
+                              	 <p><font color="black">_________________________________________________________________________</font></p>
+								 
+								 
+								 <h2> <img class="event-title"  src="gifen.jpg" width="50" height="50" /><font color="black">Il-Gifen Bar</font></h2>
+	                             <p><font color="black">277 Triq San Pawl, Valletta, Island of Malta VLT 1213   </font></p>
+								 <p>  <img class="event-title"  src="tel.png" width="32" height="32" /><font color="black"></font></p>
+                              	 <p><font color="black">_________________________________________________________________________</font></p>
+								 
+								 
+								 <h2> <img class="event-title"  src="culto.jpg" width="50" height="50" /><font color="black">Culto Caffetteria</font></h2>
+	                             <p><font color="black">49. St.John street, Valletta, Island of Malta VLT 1164   </font></p>
+								 <p>  <img class="event-title"  src="tel.png" width="32" height="32" /><font color="black">+356 2749 6810</font></p>
+                              	 <p><font color="black">_________________________________________________________________________</font></p>
+								 
+								 
+								 <h2> <img class="event-title"  src="museum.jpg" width="50" height="50" /><font color="black">Museum cafe</font></h2>
+	                             <p><font color="black">Triq. Melita, Valletta, Island of Malta  </font></p>
+								 <p>  <img class="event-title"  src="tel.png" width="32" height="32" /><font color="black"></font></p>
+                              	 <p><font color="black">_________________________________________________________________________</font></p>
+								 
+								 
+								 <h2> <img class="event-title"  src="croce.jpg" width="50" height="50" /><font color="black">Dolceria Croce Bonaci</font></h2>
+	                             <p><font color="black">24 | St John Str, Valletta, Island of Malta VLT1168  </font></p>
+								 <p>  <img class="event-title"  src="tel.png" width="32" height="32" /><font color="black">+356 2124 7933</font></p>
+                              	 <p><font color="black">_________________________________________________________________________</font></p>
+								 
+								 
+								 <h2> <img class="event-title"  src="reno.jpg" width="50" height="50" /><font color="black">Reno's Cafe Valletta</font></h2>
+	                             <p><font color="black">10, Zachary Street, Valletta, Island of Malta VLT 1133 </font></p>
+								 <p>  <img class="event-title"  src="tel.png" width="32" height="32" /><font color="black">+356 2124 5333</font></p>
+                              	 <p><font color="black">_________________________________________________________________________</font></p>
+								 
+								 <h2> <img class="event-title"  src="fellini.jpg" width="50" height="50" /><font color="black">Fellini</font></h2>
+	                             <p><font color="black">Archbishop street 120, Valletta, Island of Malta  </font></p>
+								 <p>  <img class="event-title"  src="tel.png" width="32" height="32" /><font color="black">356 79217172</font></p>
+                              	 <p><font color="black">_________________________________________________________________________</font></p>
+								 
+								 <h2> <img class="event-title"  src="jews.jpg" width="50" height="50" /><font color="black">Jews Sally Port eatery & cafe</font></h2>
+	                             <p><font color="black">102, St Nicholas str | At the end of Old Bakery Str, Valletta, Island of Malta  </font></p>
+								 <p>  <img class="event-title"  src="tel.png" width="32" height="32" /><font color="black">356 21240909</font></p>
+                              	 <p><font color="black">_________________________________________________________________________</font></p>
+								 
+								 <h2> <img class="event-title"  src="vino.jpg" width="50" height="50" /><font color="black">Vino's Cafe Bar</font></h2>
+	                             <p><font color="black">19, St.John's Street, Valletta, Island of Malta VLT 1168  </font></p>
+								 <p>  <img class="event-title"  src="tel.png" width="32" height="32" /><font color="black">356 99467047</font></p>
+                              	 <p><font color="black">_________________________________________________________________________</font></p>
+								 
+								 <h2> <img class="event-title"  src="barrakka.jpg" width="50" height="50" /><font color="black">Upper Barrakka Kiosk</font></h2>
+	                             <p><font color="black">upper barakka gardens, Valletta, Island of Malta  </font></p>
+								 <p>  <img class="event-title"  src="tel.png" width="32" height="32" /><font color="black"></font></p>
+                              	 <p><font color="black">_________________________________________________________________________</font></p>
+								 
+								 <h2> <img class="event-title"  src="prego.jpg" width="50" height="50" /><font color="black">Prego</font></h2>
+	                             <p><font color="black">58 South Street, Valletta, Island of Malta </font></p>
+								 <p>  <img class="event-title"  src="tel.png" width="32" height="32" /><font color="black">+356 2122 4062</font></p>
+                              	 <p><font color="black">_________________________________________________________________________</font></p>
+								 
+								 <h2> <img class="event-title"  src="circles.jpg" width="50" height="50" /><font color="black">The Circles</font></h2>
+	                             <p><font color="black">Republic Street, Valletta, Island of Malta </font></p>
+								 <p>  <img class="event-title"  src="tel.png" width="32" height="32" /><font color="black"></font></p>
+                              	 <p><font color="black">_________________________________________________________________________</font></p>
+								 
+								 <h2> <img class="event-title"  src="gunpost.jpg" width="50" height="50" /><font color="black">The GunPost - Bar & Restaurant</font></h2>
+	                             <p><font color="black">St. Sebastian Street, Valletta, Island of Malta </font></p>
+								 <p>  <img class="event-title"  src="tel.png" width="32" height="32" /><font color="black"></font></p>
+                              	 <p><font color="black">_________________________________________________________________________</font></p>
+								 								 
+								 <h2> <img class="event-title"  src="thecircle.jpg" width="50" height="50" /><font color="black">The Circle</font></h2>
+	                             <p><font color="black">141/142 Palazzo Messina, Valletta, Island of Malta </font></p>
+								 <p>  <img class="event-title"  src="tel.png" width="32" height="32" /><font color="black">+356 2124 4863</font></p>
+                              	 <p><font color="black">_________________________________________________________________________</font></p>
+		    			       </div>
+							 </div>
+					   </div>
+			          </div>
+					
+					
+					
 					
 					
 					<div id="sports" data-role="dialog"  data-theme="b" >
@@ -138,16 +530,49 @@
                        </div>
                       
 					   <div >
-					         <div class="scroll">
+					         <div class="scroll1">
                              
-	                             <p><font color="black">Valletta (or Il-Belt) is the tiny capital of the Mediterranean island nation of Malta. The walled city was established in the 1500s on a peninsula by the Knights of St. John, a Roman Catholic order. It’s known for museums, palaces and grand churches. Baroque landmarks include St. John’s Co-Cathedral, whose opulent interior is home to the Caravaggio masterpiece "The Beheading of Saint John." </font></p>
-                                
-								 <span> <img src = "valletta.jpg" width="500" height="200"></span>
+	                             
+					
+					                  <div data-role="sports" id="sport-1">
+                                           <ul data-role="listview"  >
+                                              <li><a style="background:white"  href="#football"><font color="black">Football</font></a></li>
+                                              <li><a style ="background:white" href="#waterpolo"><font color="black">Waterpolo</font></a></li>
+                                            </ul>
+                                      </div>
+				                  </div>	
                               </div>
 					   </div>
+			        
+					
+					<div id="football" data-role="dialog"  data-theme="b" >
+                       <div data-role="header">
+                           <h1>FOOTBALL</h1>
+                       </div>
+                      
+					   <div >
+					  
+                                 <h2> <img class="event-title"  src="valletta-logo.png" width="50" height="50" /><font color="black">Valletta FC</font></h2>
+	                             <p><font color="black">Valletta Football Club was founded in 1943, as a merger of Valletta Prestons, Valletta St. Paul's and the extinct Valletta United which had won two league championships before World War II. Valletta also have a futsal team which participates in Malta's top futsal league.</font></p>
+			 
+			          </div>
+					
 			        </div>
 					
+					<div id="waterpolo" data-role="dialog"  data-theme="b" >
+                       <div data-role="header">
+                           <h1>WATERPOLO</h1>
+                       </div>
+                      
+					   <div >
+					       
+                                 <h2> <img class="event-title"  src="waterpolo-valletta.png" width="50" height="50" /><font color="black">Valletta Water Polo Club</font></h2>
+	                             <p><font color="black">Valletta Water Polo Club, is nicely ensconced beneath the towering bastions at Marsamxett, which unfortunately has been abandoned for a number of years, ever since financial difficulties meant the closure of the glorious club in 2004.</font></p>
+			                     <p><font color="black">Right to this day, Valletta WPC is still the third most successful water polo club in Malta, after Sliema and Neptunes, but the club is no longer active, and efforts are now being made to restore the club premises and build a new team</font></p>
+						   
+			          </div>
 					
+			        </div>
 				
 		</body>
    
