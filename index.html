@@ -3,7 +3,8 @@
 <head>
   <title>DISCOVER MALTA</title>
   	
-       
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
 
            <link rel="stylesheet" href="jquery.mobile-1.1.0.min.css" />
            <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">  
@@ -100,6 +101,8 @@
                             <li><a style ="background:white" href="#places"><font color="black">Places to Visit</font></a></li>
                             <li><a style ="background:white" href="#restaurants"><font color="black">Restaurants</font></a></li>
                             <li><a style ="background:white" href="#sports"><font color="black">Sports</font></a></li>
+						    <li><a style ="background:white" href="#map"><font color="black">Tourist Map</font></a></li>
+
                            </ul>
                     </div>
 				</div>	
@@ -573,6 +576,20 @@
 			          </div>
 					
 			        </div>
+					
+					
+					<div id="map" data-role="dialog"  data-theme="b" >
+                       <div data-role="header">
+                           <h1>Tourist Map</h1>
+                       </div>
+                      
+					   <div >
+
+					                  <div data-role="map" id="map-1">
+									     <span> <img src = "valletta-map.jpg" width="500" height="500"></span>
+									  </div>
+	                   </div>								  
+					</div>
 				
 		</body>
    
