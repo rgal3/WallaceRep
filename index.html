@@ -11,15 +11,28 @@
       
 	     <style type='text/css'>
 		 
-		      .ui-page .ui-header {
-                    background: blue!important;
-					font-size:130%;
-					              }
+		 body {
+    background: url(bell.jpg);
+    background-repeat:repeat-y;
+    background-position:center center;
+    background-attachment:scroll;
+    background-size:100% 100%;
+}
+.ui-page {
+    background: transparent;
+}
+.ui-content{
+    background: transparent;
+}
+		 
+		 
+		 
+		      
                        
 			   
 		    .event-title{
 	             float: left; 
-	             margin-right: 15px !important;
+	             margin-right: 30px !important;
                  padding-right: 25px !important;
                         }
 						
@@ -34,11 +47,7 @@
                    height: 300px;
                    overflow: scroll;
                   }
-		         .ui-mobile-viewport{
-		     
-                  background: url("cover.jpg") no-repeat;
-                  background-size: 100% 100% !important;
-             }
+		         
                  .ui-page{
                     background:none;
                     }
@@ -65,6 +74,17 @@
                       margin-top: -175px !important; 
 		 				   } 
 		
+		.ui-dialog-contain {
+	          width: 92.5%;
+	          max-width: 500px;
+	          margin: 10% auto 15px auto;
+	          padding: 0;
+	          position: relative;
+	          top: -15px;
+                       }
+		
+		
+		
 				 #dialog p { 
 				     background-color: blue; 
 					 }
@@ -81,6 +101,7 @@
         <script src='http://example.gajotres.net/iscrollview/jquery.mobile.iscrollview.js'></script>
 		
         <body>
+		    
 		   <div data-role="page" id="page-1">
               <div data-theme="b" data-role="header" >
                   <h1><font color="white">DISCOVER MALTA</font></h1>
@@ -106,7 +127,7 @@
                            </ul>
                     </div>
 				</div>	
-					<div id="about" data-role="dialog"  data-theme="b" >
+					<div id="about" data-role="dialog"  class="ui-shadow ui-btn ui-corner-all ui-btn-inline" data-theme="b" >
                        <div data-role="header">
                            <h1>About Valletta</h1>
                        </div>
@@ -114,7 +135,14 @@
 					   <div >
 					         <div >
                              
-	                             <p><font color="black">Valletta (or Il-Belt) is the tiny capital of the Mediterranean island nation of Malta. The walled city was established in the 1500s on a peninsula by the Knights of St. John, a Roman Catholic order. It’s known for museums, palaces and grand churches. Baroque landmarks include St. John’s Co-Cathedral, whose opulent interior is home to the Caravaggio masterpiece "The Beheading of Saint John." </font></p>
+	                             <p><font color="black">Valletta (or Il-Belt) is the tiny capital of the Mediterranean 
+								 <br>island nation of Malta. The walled city
+								 <br> was established in the 1500s on a peninsula by 
+								 <br>the Knights of St. John, a Roman Catholic order.
+								 <br> It’s known for museums, palaces and grand churches. 
+								 <br>Baroque landmarks include St. Johns Co-Cathedral,
+								 <br>whose opulent interior is home to the Caravaggio masterpiece 
+								 <br>"The Beheading of Saint John." </font></p>
                                 						 
 								 <span> <img src = "valletta.jpg" width="500" height="200"></span>
                               </div>
