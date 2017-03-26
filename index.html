@@ -12,24 +12,25 @@
 	     <style type='text/css'>
 		 
 		 body {
-    background: url(bell.jpg);
-    background-repeat:repeat-y;
-    background-position:center center;
-    background-attachment:scroll;
-    background-size:100% 100%;
-}
-.ui-page {
-    background: transparent;
-}
-.ui-content{
-    background: transparent;
-}
-		 
-		 
-		 
-		      
-                       
-			   
+                background: url(cover.jpg);
+                background-repeat:repeat-y;
+                background-position:center center;
+                background-attachment:scroll;
+                background-size:80% 80%;
+                 }
+          .ui-page {
+                 background: transparent;
+                   }
+          .ui-content{
+                background: transparent;
+                      }
+	          
+			   .ui-header {
+                    background: blue!important;
+					font-size:130%;
+									
+                
+					              }
 		    .event-title{
 	             float: left; 
 	             margin-right: 30px !important;
@@ -103,13 +104,14 @@
         <body>
 		    
 		   <div data-role="page" id="page-1">
-              <div data-theme="b" data-role="header" >
+              <div data-theme="e" data-role="header" data-position="inline" >
                   <h1><font color="white">DISCOVER MALTA</font></h1>
               </div>
 			      <div data-role="content">
-                      <a href="#towns" data-rel="dialog" data-role="button">VALLETTA</a>
+				      <a href="#towns" data-rel="dialog" data-role="button">VALLETTA</a>
                       <a href="#towns1" data-rel="dialog" data-role="button">FLORIANA</a>
                   </div>
+				  <footer data-role="footer" data-position="inline"><h1>O'Reilly</h1></footer>
 			</div>	  
 				 <div data-role="dialog" id="towns" data-theme="b">
                     <div data-role="header" data-theme="c">
